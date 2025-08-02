@@ -28,17 +28,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
 h2 {
-    font-size: 1.05em;
+    font-size: 1.25em;
     margin-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 0.5em;
 }
 
@@ -184,7 +184,7 @@ a:hover {
 
 .post-header-title {
     margin-bottom: 0rem;
-    font-size: 1.1em;
+    font-size: 1.25em;
 }
 
 /* Math equations styling */
