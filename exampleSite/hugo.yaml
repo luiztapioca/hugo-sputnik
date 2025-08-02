@@ -1,0 +1,63 @@
+baseURL: 'https://1917dc.github.io'
+languageCode: 'pt-br'
+title: 'Hugo Sputnik'
+theme: ' ../../../hugo-sputnik'
+
+menus:
+  main:
+    - name: 'Home'
+      pageRef: '/'
+      weight: 10
+    - name: 'About'
+      pageRef: '/about'
+      weight: 20
+    - name: 'Contact'
+      pageRef: '/contact'
+      weight: 30
+    - name: 'Tags'
+      pageRef: '/tags'
+      weight: 40
+
+taxonomies:
+  tag: 'tags'
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.116.0"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    lineAnchors: ""
+    lineNoStart: 1
+    tabWidth: 4
+
+params:
+  bio:
+    name: 'Author Name'
+    theme: 'Hugo Sputnik'
+    startYear: '2024'
+  social:
+    github: ''
+    lastfm: ''
+    letterboxd: ''
+    instagram: ''
+  contact:
+    email: 'mailto:your-email@example.com'
+  logo:
+    image: '/logo.svg'
+  favicon:
+    icon: '/favicon.svg'
+
+caches:
+  images:
+    dir: ':cacheDir/images'
