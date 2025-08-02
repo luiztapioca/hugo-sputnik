@@ -1,0 +1,51 @@
+baseURL = 'https://1917dc.github.io/'
+languageCode = 'pt-br'
+title = 'Café & Tapioca'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+#[[menus.main]]
+#name = 'Posts'
+#pageRef = '/posts'
+#weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 40
+
+[module]
+
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[params]
+
+  [params.bio]
+    name = 'Luiz G.'
+    theme = 'Hugo Sputnik'
+    startYear = '2024'
+    
+  [params.social]
+    github = 'https://github.com/1917dc'
+    lastfm = 'https://last.fm/user/gfxnx'
+    letterboxd = 'https://letterboxd.com/yyounevershould'
+    instagram = 'https://www.instagram.com/1917.dc'
+
+  [params.contact]
+    email = 'mailto:luizgust.dev@gmail.com'
+  
+  [params.logo]
+    image = '/logo.svg'
+  
+  [params.favicon]
+    icon = '/favicon.svg'
