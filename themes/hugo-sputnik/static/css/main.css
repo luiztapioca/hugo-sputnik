@@ -144,6 +144,9 @@ a:hover {
 }
 
 .post-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .post-excerpt {
