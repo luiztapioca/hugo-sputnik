@@ -8,10 +8,27 @@
     --menu-link-color: #1E90FF;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    max-width: 800px;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', 'Fira Sans', sans-serif;
     color: var(--h-color);
 }
+
+table {
+  margin: auto;
+  width: 100%;
+}
+
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 img {
     display: block;
@@ -21,13 +38,6 @@ img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: auto;
-    max-width: 1000px;
-    padding: 1rem;
-    color: var(--text-color);
-}
 
 a {
     text-decoration: none;
