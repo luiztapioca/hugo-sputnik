@@ -1,10 +1,14 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="post-header">
+    <h1 class="post-header-title">{{ .Title }}</h1>
+      {{ $dateMachine := .Date | time.Format "2006.01.02" }}
+      <p class="post-date">
+        <i class="fas fa-clock"></i>
+        {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      </p>
+  </div>
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
   {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

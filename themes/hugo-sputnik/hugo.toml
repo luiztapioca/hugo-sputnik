@@ -1,51 +1,72 @@
-baseURL = 'https://1917dc.github.io/'
+baseURL = 'https://1917dc.github.io'
 languageCode = 'pt-br'
-title = 'Café & Tapioca'
+title = 'Hugo Sputnik'
 
 [[menus.main]]
 name = 'Home'
 pageRef = '/'
 weight = 10
 
-#[[menus.main]]
-#name = 'Posts'
-#pageRef = '/posts'
-#weight = 20
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 20
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 30
 
 [[menus.main]]
 name = 'Tags'
 pageRef = '/tags'
-weight = 30
-
-[[menus.main]]
-name = 'About'
-pageRef = '/about'
 weight = 40
 
-[module]
 
+[taxonomies]
+  tag = 'tags'
+
+[module]
   [module.hugoVersion]
     extended = false
     min = "0.116.0"
 
-[params]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    lineAnchors = ""
+    lineNoStart = 1
+    tabWidth = 4
 
+[params]
   [params.bio]
-    name = 'Luiz G.'
+    name = 'Author Name'
     theme = 'Hugo Sputnik'
     startYear = '2024'
     
   [params.social]
-    github = 'https://github.com/1917dc'
-    lastfm = 'https://last.fm/user/gfxnx'
-    letterboxd = 'https://letterboxd.com/yyounevershould'
-    instagram = 'https://www.instagram.com/1917.dc'
+    github = ''
+    lastfm = ''
+    letterboxd = ''
+    instagram = ''
 
   [params.contact]
-    email = 'mailto:luizgust.dev@gmail.com'
-  
+    email = 'mailto:your-email@example.com'
+
   [params.logo]
     image = '/logo.svg'
   
   [params.favicon]
     icon = '/favicon.svg'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
