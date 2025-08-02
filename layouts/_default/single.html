@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="post-header">
-    <h1 class="post-header-title">{{ .Title }}</h1>
+    <h3 class="post-header-title">{{ .Title }}</h1>
       {{ $dateMachine := .Date | time.Format "2006.01.02" }}
       <p class="post-date">
         <i class="fas fa-clock"></i>
