@@ -3,13 +3,12 @@
   {{ .Content }}
   {{ range .Pages }}
       <div class="post-summary">
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        <p class="post-excerpt"> — </p>
         <p class="post-date">
           <i class="fas fa-clock"></i>
           {{ .Date.Format "2006.01.02" }}
         </p>
+        <p class="post-excerpt"> — </p>
+        <h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       </div>
-      <p>{{ .Summary }}</p>
   {{ end }}
 {{ end }}

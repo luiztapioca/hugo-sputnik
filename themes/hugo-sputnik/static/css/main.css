@@ -154,11 +154,11 @@ a:hover {
 .post-header {
     align-items: center;
     gap: 2rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0rem;
 }
 
 .post-header-title {
-    margin-bottom: -1rem;
+    margin-bottom: 0rem;
 }
 
 /* Math equations styling */
