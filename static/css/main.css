@@ -138,9 +138,11 @@ a:hover {
 
 .post-summary {
     display: flex;
+    flex-direction: column;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0;
     align-items: center;
+    text-align: center;
 }
 
 .divider {
