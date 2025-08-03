@@ -138,11 +138,11 @@ a:hover {
 
 .post-summary {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0;
     margin: 1rem 0;
     align-items: center;
-    text-align: center;
+    gap: 1rem;
 }
 
 .divider {
@@ -172,11 +172,18 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .post-excerpt {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.post-summary h4 {
+    margin: 0;
+    flex: 1;
 }
 
 .post-header {
