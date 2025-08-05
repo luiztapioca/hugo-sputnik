@@ -173,7 +173,6 @@ a:hover {
     align-items: center;
     gap: 0.5rem;
     margin: 0;
-    font-size: 0.875rem;
     white-space: nowrap;
 }
 
@@ -189,7 +188,7 @@ a:hover {
 }
 
 .post-title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     align-items: center;
 }
 
