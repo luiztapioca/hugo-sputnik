@@ -184,11 +184,13 @@ a:hover {
 
 .post-summary {
     margin: 0;
+    gap: 0.5rem;
     align-items: center;
 }
 
 .post-title {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
 }
 
 .post-header {
