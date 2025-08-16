@@ -8,9 +8,14 @@
     {{ partial "header.html" . }}
   </header>
   <div class="divider"></div>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+  <div class="main">
+    <main class="content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    <aside>
+      {{ block "sidebar" . }}{{ end }}
+    </aside>
+  </div>
   <div class="divider"></div>
   <footer>
     {{ partial "footer.html" . }}

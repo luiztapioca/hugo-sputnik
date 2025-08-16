@@ -1,10 +1,10 @@
 {{ define "main" }}
   <div class="post-header">
     <h1 class="post-header-title">{{ .Title }}</h1>
-      {{ $dateMachine := .Date | time.Format "2006.01.02" }}
+      {{ $dateMachine := .Date | time.Format "01.02.2006" }}
       <p class="post-date">
         <i class="fas fa-clock"></i>
-        {{ $dateHuman := .Date | time.Format "2006.01.02" }}
+        {{ $dateHuman := .Date | time.Format "02.01.2006" }}
         <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
       </p>
   </div>
