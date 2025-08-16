@@ -4,22 +4,22 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <div class="divider"></div>
   <div class="main">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+    <div class="divider"></div>
     <main class="content">
       {{ block "main" . }}{{ end }}
     </main>
-    <aside>
-      {{ block "sidebar" . }}{{ end }}
-    </aside>
+    <div class="divider"></div>
+    <footer>
+      {{ partial "footer.html" . }}
+      {{ partial "footer-scripts.html" . }}
+    </footer>
   </div>
-  <div class="divider"></div>
-  <footer>
-    {{ partial "footer.html" . }}
-    {{ partial "footer-scripts.html" . }}
-  </footer>
+  <aside>
+    {{ block "sidebar" . }}{{ end }}
+  </aside>
 </body>
 </html>
