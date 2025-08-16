@@ -5,21 +5,23 @@
 </head>
 <body>
   <div class="main">
-    <header>
-      {{ partial "header.html" . }}
-    </header>
-    <div class="divider"></div>
-    <main class="content">
-      {{ block "main" . }}{{ end }}
-    </main>
-    <div class="divider"></div>
-    <footer>
-      {{ partial "footer.html" . }}
-      {{ partial "footer-scripts.html" . }}
-    </footer>
+    <div>
+      <header>
+        {{ partial "header.html" . }}
+      </header>
+      <div class="divider"></div>
+      <main class="content">
+        {{ block "main" . }}{{ end }}
+      </main>
+      <div class="divider"></div>
+      <footer>
+        {{ partial "footer.html" . }}
+        {{ partial "footer-scripts.html" . }}
+      </footer>
+    </div>
+    <aside>
+      {{ block "sidebar" . }}{{ end }}
+    </aside>
   </div>
-  <aside>
-    {{ block "sidebar" . }}{{ end }}
-  </aside>
 </body>
 </html>
