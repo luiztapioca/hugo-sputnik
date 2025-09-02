@@ -2,6 +2,7 @@ baseURL: 'https://1917dc.github.io'
 languageCode: 'pt-br'
 title: 'Hugo Sputnik'
 theme: 'hugo-sputnik'
+themesDir: '../..'
 
 menus:
   main:
