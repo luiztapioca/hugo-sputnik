@@ -14,11 +14,7 @@
   {{ if .Params.tags }}
     <div class="post-tags">
       {{ range .Params.tags }}
-        {{ with .Params.tags }}
-          {{ range . }}
-            <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
-          {{ end }}
-        {{ end }}
+        <a href="{{ "tags/" | absURL }}{{ . | urlize }}" class="tag-link">#{{ . }}</a>
       {{ end }}
     </div>
   {{ end }}
