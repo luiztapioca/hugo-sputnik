@@ -12,4 +12,4 @@
 
 All custom information should be stored in `hugo.toml`.
 
-[Demo](https://1917dc.github.io/hugo-sputnik/)
+[Demo](https://luiztapioca.github.io/hugo-sputnik/)
