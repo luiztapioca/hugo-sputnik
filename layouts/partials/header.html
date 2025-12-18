@@ -4,11 +4,4 @@
         <h1>{{ site.Title }}</h1>
     </div>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    <div class="header-rss">
-        {{ with .OutputFormats.Get "RSS" }}
-        <a href="{{ .Permalink }}" title="RSS Feed" target="_blank" rel="noopener">
-            <i class="fas fa-rss"></i>
-        </a>
-        {{ end }}
-    </div>
 </div>
