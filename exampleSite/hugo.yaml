@@ -4,6 +4,11 @@ title: 'Hugo Sputnik'
 theme: 'hugo-sputnik'
 themesDir: '../..'
 
+# RSS Configuration
+copyright: 'Copyright © 2024 Hugo Sputnik'
+rssLimit: 20  # Number of items in RSS feed
+enableRobotsTXT: true
+
 menus:
   main:
     - name: 'Home'
@@ -38,6 +43,8 @@ markup:
     anchorLineNos: false
     codeFences: true
     guessSyntax: true
+  description: 'A modern blog built with Hugo Sputnik theme'
+  author: 'Author Name'
     lineAnchors: ""
     lineNoStart: 1
     tabWidth: 4

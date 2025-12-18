@@ -1,3 +1,6 @@
 <div class="footer">
-    <p>Copyright &copy; {{ site.Params.bio.name }} {{ site.Params.bio.startYear }} - {{ now.Year }}.</p>
+    <p>{{ site.Params.bio.name }} | {{ site.Params.bio.startYear }} - {{ now.Year }}.</p>
+    {{ with .OutputFormats.Get "RSS" }}
+    <p><a href="{{ .Permalink }}" title="RSS Feed"><i class="fas fa-rss"></i> Subscribe via RSS</a></p>
+    {{ end }}
 </div>
